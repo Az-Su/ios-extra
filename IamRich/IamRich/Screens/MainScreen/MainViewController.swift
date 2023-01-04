@@ -53,7 +53,7 @@ class MainViewController: UIViewController {
         button.titleLabel?.font = UIFont.systemFont(ofSize: 22)
         button.layer.cornerRadius = 10
         button.setTitle("Change", for: .normal)
-        button.addTarget(MainViewController.self, action: #selector(changeNumber), for: .touchUpInside)
+        button.addTarget(self, action: #selector(changeNumber), for: .touchUpInside)
         return button
     }()
 
